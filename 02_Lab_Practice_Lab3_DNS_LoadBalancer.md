@@ -10,10 +10,20 @@
 4. Global DNS 등록  
 5. CNAME 레코드로 www 도메인 연결
 
+## 로드 밸런서용으로 만든 서브넷
+![로드밸런서 서브넷](./images/subnet_for_Load_balancer.png)
+
+## 로드 밸런서 타겟 그룹 세팅
+![로드밸런서 타겟 그룹](./images/Load_balancer_target_config.png)
+
+## 생성된 로드 밸런서
+![로드 밸런서](./images/Load_balancer_config.png)
+
 ## 결과
 ![로드밸런서 테스트 1](./images/Road_Balance_01,_Round_Robin.png) | ![로드밸런서 테스트 2](./images/Road_Balance_02,_Round_Robin.png) |
 
 새로고침 할때마다 Round Robin 방식으로 org1과 org2를 순환한다.
+
 
 
 
