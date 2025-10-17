@@ -11,4 +11,5 @@
 5. CNAME 레코드로 www 도메인 연결
 
 ## 결과
-![로드밸런서 테스트](../images/load_balancer_test.png)
+![로드밸런서 테스트 1](../images/Road Balance 01, Round Robin.png) | ![로드밸런서 테스트 2](../images/Road Balance 02, Round Robin.png) |
+
