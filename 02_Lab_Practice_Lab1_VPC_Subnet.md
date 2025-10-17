@@ -20,14 +20,38 @@ VPC는 가상 사설 네트워크로, 서비스 간 트래픽을 분리하고 �
 ## 2️⃣ Subnet 생성
 | 항목 | 값 |
 |------|----|
-| 이름 | lab1-web-subnet |
+| 이름 | lab1-vpc-web-sub1 |
 | IP 대역 | 10.0.1.0/24 |
 | 존 | KR-2 |
 | 역할 | 웹 서버 배치용 |
 
+## 설정 화면
+![GUI 화면](./images/vpc_web_sub1)
+
 **설명:**  
 VPC 내부에서 네트워크를 세분화하여 서버 그룹을 분리.  
 웹, DB, Load Balancer 영역을 각각 다른 Subnet으로 분리 가능.
+
+---
+
+## 2️⃣-1️⃣ 🔒 Private Subnet (DB용) 추가 구성
+
+| 이름 | IP 대역 | 존 | 역할 |
+|------|----------|------|------|
+| lab1-vpc-db-sub1 | 10.0.3.0/24 | KR-2 | 데이터베이스용 Private Subnet |
+
+**특징**
+- 인터넷 게이트웨이(IGW) 미연결 → 외부 접근 차단  
+- NAT Gateway도 연결하지 않음 → 완전 내부 통신 전용  
+- 웹 서버(`lab1-web-subnet`)에서만 접근 가능 (ACG로 제어)
+
+**구성 목적**
+- 데이터베이스 서버는 외부망에 노출될 필요가 없으므로,  
+  Private Subnet에 배치하여 **보안성을 강화**함.
+- 오직 내부 VPC 트래픽만 허용하도록 ACG/NACL을 설정함.
+
+**네트워크 구성**
+![DB 서브넷 구성](./images/private_networking_DB_subnet.png)
 
 ---
 
@@ -86,3 +110,4 @@ OUTBOUND
 > ACG는 인스턴스 단위 방화벽,  
 > NACL은 Subnet 단위 트래픽 제어.  
 > 둘 다 설정해야 완전한 보안 레이어 형성 가능.
+
