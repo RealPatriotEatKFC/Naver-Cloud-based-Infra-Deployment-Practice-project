@@ -17,10 +17,10 @@ VPC/Subnet, Web Server, DNS, Load Balancer, Auto Scaling 등을 단계별로 구
 📂 구성
 | 폴더 | 설명 |
 |------|------|
-| `01_Theory/` | 클라우드 및 NCP 개념 정리 |
-| `02_Lab_Practice/` | 단계별 실습 구성 및 결과 |
-| `03_Scripts/` | 실습 시 사용한 스크립트 |
-| `images/` | 아키텍처 다이어그램 및 결과 캡처 |
+| `01_Theory` | 클라우드 및 NCP 개념 정리 |
+| `02_Lab_Practice` | 단계별 실습 구성 및 결과 |
+| `03_Scripts` | 실습 시 사용한 스크립트 |
+| `images` | 아키텍처 다이어그램 및 결과 캡처 |
 
 ---
 
@@ -38,4 +38,5 @@ VPC/Subnet, Web Server, DNS, Load Balancer, Auto Scaling 등을 단계별로 구
 단순 실습을 넘어 운영 관점의 구조 이해까지 배운 유의미한 프로젝트였습니다.
 
 ---
+
 
