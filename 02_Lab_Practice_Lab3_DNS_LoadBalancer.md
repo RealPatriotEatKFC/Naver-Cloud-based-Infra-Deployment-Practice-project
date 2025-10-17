@@ -13,4 +13,7 @@
 ## 결과
 ![로드밸런서 테스트 1](./images/Road_Balance_01,_Round_Robin.png) | ![로드밸런서 테스트 2](./images/Road_Balance_02,_Round_Robin.png) |
 
+새로고침 할때마다 Round Robin 방식으로 org1과 org2를 순환한다.
+
+
 
