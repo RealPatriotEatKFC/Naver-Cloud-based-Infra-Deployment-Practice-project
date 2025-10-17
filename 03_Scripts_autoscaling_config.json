@@ -1,0 +1,13 @@
+{
+  "LaunchConfiguration": "lab-lc",
+  "AutoScalingGroup": "lab-asg",
+  "MinSize": 1,
+  "MaxSize": 3,
+  "DesiredCapacity": 2,
+  "Cooldown": 10,
+  "HealthCheckType": "ELB",
+  "Metrics": {
+    "CPUThreshold": 10,
+    "Action": "scale_out"
+  }
+}
