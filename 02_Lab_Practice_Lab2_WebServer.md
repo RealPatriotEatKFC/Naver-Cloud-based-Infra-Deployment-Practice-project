@@ -10,4 +10,5 @@ VPC 내에 웹 서버를 구축하고 Apache + PHP 환경을 구성한다.
 4. **공인 IP 연결 및 웹 페이지 테스트**
 
 ## 테스트 결과
-![웹 테스트](../images/web_server_result.png)
+![웹 테스트](./images/Road_Balance_01,_Round_Robin.png)
+
