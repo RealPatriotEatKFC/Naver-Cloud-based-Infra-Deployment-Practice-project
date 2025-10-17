@@ -9,6 +9,7 @@
 3. **Subnet 생성** – `lab1-vpc-web-sub1`, `10.0.1.0/24`, KR-2 Zone
 
 ## 결과
-![VPC Diagram](../images/web_subnet.png)
+![VPC Diagram](/images/web_subnet.png)
+
 
 
