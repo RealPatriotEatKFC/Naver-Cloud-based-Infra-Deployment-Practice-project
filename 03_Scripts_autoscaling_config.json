@@ -1,3 +1,4 @@
+# DesiredCapacity는 최소 사이즈보다 크고 최대보다 작아야함
 {
   "LaunchConfiguration": "lab-lc",
   "AutoScalingGroup": "lab-asg",
@@ -11,6 +12,5 @@
     "Action": "scale_out"
   }
 }
-# DesiredCapacity는 최소 사이즈보다 크고 최대보다 작아야함
 
 
