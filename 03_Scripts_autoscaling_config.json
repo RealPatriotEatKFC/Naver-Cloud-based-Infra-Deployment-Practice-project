@@ -1,4 +1,4 @@
-# DesiredCapacity는 최소 사이즈보다 크고 최대보다 작아야함, nCloud에서 GUI 환경에서 설정할 수 있도록 제공 중
+# DesiredCapacity는 최소 사이즈보다 크고 최대보다 작아야함, nCloud에서 GUI 환경으로 설정할 수 있도록 제공 중
 {
   "LaunchConfiguration": "lab-lc",
   "AutoScalingGroup": "lab-asg",
@@ -12,6 +12,7 @@
     "Action": "scale_out"
   }
 }
+
 
 
 
