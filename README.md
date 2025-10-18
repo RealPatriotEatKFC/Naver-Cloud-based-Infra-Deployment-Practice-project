@@ -15,7 +15,7 @@ VPC/Subnet, Web Server, DNS, Load Balancer, Auto Scaling 등을 단계별로 구
 ---
 
 📂 구성
-| 폴더 | 설명 |
+| 목차 | 설명 |
 |------|------|
 | `01_Theory` | 클라우드 및 NCP 개념 정리 |
 | `02_Lab_Practice` | 단계별 실습 구성 및 결과 |
@@ -27,7 +27,7 @@ VPC/Subnet, Web Server, DNS, Load Balancer, Auto Scaling 등을 단계별로 구
 ⚙️ 사용 환경
 - Platform: [NAVER Cloud Platform](https://www.ncloud.com)
 - OS: Rocky Linux 8.10
-- Tools: Apache, PHP, MariaDB, LoadBalancer, Global DNS, AutoScaling
+- Tools: Apache, PHP, MariaDB, MySQL, LoadBalancer, Global DNS, AutoScaling
 
 ---
 
@@ -38,5 +38,6 @@ VPC/Subnet, Web Server, DNS, Load Balancer, Auto Scaling 등을 단계별로 구
 단순 실습을 넘어 운영 관점의 구조 이해까지 배운 유의미한 프로젝트였습니다.
 
 ---
+
 
 
