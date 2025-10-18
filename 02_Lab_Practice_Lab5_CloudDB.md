@@ -14,7 +14,7 @@ Public Subnet의 웹 서버와 내부 통신으로 연동한다.
 구조로 내부 통신만 허용하는 아키텍처를 구축한다.
 
 **사전 생성한 서브넷**
-![사전 생성한 서브넷](./images/cloud_db_architecture.png)
+![사전 생성한 서브넷](./images/private_networking_DB_subnet.png)
 
 ---
 
