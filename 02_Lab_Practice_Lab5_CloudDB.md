@@ -52,7 +52,7 @@ DB는 외부 접근이 불필요하므로 Private Subnet에 배치하고,
 Cloud DB 콘솔에서 연결 정보 확인 후,  
 웹 서버에서 내부 IP로 접속 테스트 진행.
 
-![DB 접속](./images/)
+![DB 접속](./images/Cloud_DB_ssh.png)
 
 # DB 생성 및 사용자 추가
 CREATE DATABASE webdb;
