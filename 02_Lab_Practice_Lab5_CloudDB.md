@@ -44,7 +44,7 @@ DB는 외부 접근이 불필요하므로 Private Subnet에 배치하고,
 - DB ACG에서는 웹 서버 서브넷 IP만 허용  
 - 외부(인터넷)에서의 접근은 완전 차단  
 
-![DB ACG](./images/db_acg)
+![DB ACG](./images/db_acg.png)
 
 ---
 
