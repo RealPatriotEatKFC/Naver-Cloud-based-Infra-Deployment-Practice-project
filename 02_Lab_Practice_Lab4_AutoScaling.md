@@ -9,4 +9,8 @@
 3. Cloud Insight 연동 – CPU 10% 이상 시 서버 증설 트리거
 
 ## 결과
+
+![autosacling](./images/servers_made_by_auto_scaling.png)
+
 서버 2대 → 부하 증가 시 3대로 자동 확장 확인  
+
