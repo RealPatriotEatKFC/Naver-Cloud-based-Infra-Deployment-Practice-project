@@ -23,14 +23,14 @@ Public Subnet의 웹 서버와 내부 통신으로 연동한다.
 | 항목 | 설정값 |
 |------|--------|
 | 서비스 | Cloud DB for MySQL |
-| 이름 | lab5-cloud-db |
+| DB 서버 이름 | edu |
 | DB 버전 | MySQL 8.0 |
 | VPC | lab1-vpc |
-| Subnet | lab1-db-subnet (Private) |
+| Subnet | lab1-vpc-db-sub1 (Private) |
 | 접근 설정 | Public Access 비활성화 |
 | 포트 | 3306 |
-| 스토리지 | 20GB |
-| 백업 | 일일 자동 백업 활성화 |
+| 스토리지 | 10GB |
+| 백업 | 일일 자동 백업 비활성화 | # 실사용 목적이 아니므로
 
 **설명:**  
 DB는 외부 접근이 불필요하므로 Private Subnet에 배치하고,  
@@ -39,14 +39,12 @@ DB는 외부 접근이 불필요하므로 Private Subnet에 배치하고,
 ---
 
 ## 3️⃣ 🔒 ACG 설정 (웹 → DB 허용)
-| 규칙 이름 | 방향 | 프로토콜 | 포트 | 소스 | 동작 |
-|------------|--------|----------|--------|--------|--------|
-| DB-Allow-From-Web | Inbound | TCP | 3306 | lab1-web-subnet CIDR (10.0.1.0/24) | Allow |
-| Outbound | TCP | 3306 | 10.0.1.0/24 | Allow |
 
 **요약:**  
 - DB ACG에서는 웹 서버 서브넷 IP만 허용  
 - 외부(인터넷)에서의 접근은 완전 차단  
+
+![DB ACG](./images/db_acg)
 
 ---
 
@@ -54,6 +52,7 @@ DB는 외부 접근이 불필요하므로 Private Subnet에 배치하고,
 Cloud DB 콘솔에서 연결 정보 확인 후,  
 웹 서버에서 내부 IP로 접속 테스트 진행.
 
+![DB 접속](./images/)
 
 # DB 생성 및 사용자 추가
 CREATE DATABASE webdb;
